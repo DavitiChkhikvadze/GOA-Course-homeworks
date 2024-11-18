@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Account ფორმა</h1>
+<form id="accountForm">
+    <label for="name">სახელი:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="surname">გვარი:</label><br>
+    <input type="text" id="surname" name="surname" required><br><br>
+    
+    <label for="email">ელ.ფოსტა:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">ტელეფონი:</label><br>
+    <input type="number" id="phone" name="phone" required><br><br>
+    
+    <label for="age">ასაკი:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+    
+    <input type="submit" value="გაგზავნა">
+</form>
+
+<div id="accountsContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

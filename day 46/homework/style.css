@@ -1,0 +1,17 @@
+.custom-hr {
+    width: 100%;
+    border: none;
+    height: 3px;
+    background-color: blue;
+}
+.header1 {
+    background-color: gray;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image-div {
+    background-image: url("background_image.png");
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.parent {
+    width: 1200px;
+    height: 1200px;
+    border: 6px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    border: 3px solid blue;
+    font-size: 60px;
+    
+}

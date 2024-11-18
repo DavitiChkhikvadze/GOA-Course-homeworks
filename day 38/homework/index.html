@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>aisle of page</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: whitesmoke;
+            }
+            .chat-container {
+                background-color: white;
+                border-radius: 18px;
+                width: 300px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1)
+            }
+            .chat-container h3 {
+                background: rgb(150,76,163);
+                background: linear-gradient(90deg, rgba(150,76,163,1) 0%, rgba(255,82,164,1) 100%);
+                color: white;
+                text-align: left;
+                padding: 14px 16px;
+                border-radius: 18px 18px 0 0;
+                margin: -20px -20px 20px -20px;
+            }
+            .chat-container form input,
+            .chat-container form textarea,
+            .chat-container form button {
+                width: calc(100% - 20px);
+                margin: 7px 0;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid gainsboro;
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+            }
+            .chat-container form button {
+                background: rgb(150,76,163);
+                background: linear-gradient(90deg, rgba(150,76,163,1) 0%, rgba(255,82,164,1) 100%);
+                color: white;
+                border: none;
+                margin: 7px 0 0 0;
+                cursor: pointer;
+            }
+            .chat-container-box {
+                border: 1px solid #ddd;
+                border-radius: 15px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <h3>Let's chat? - Online</h3>
+            <p>Please fill out the form below to start chatting with the next available agent.</p>
+            <div class="chat-container-box">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea name="query" placeholder="Explain your queries..." required></textarea>
+                    <button type="submit">Start Chat</button>
+                </form>
+            </div>
+        </div> 
+    </body>
+</html>

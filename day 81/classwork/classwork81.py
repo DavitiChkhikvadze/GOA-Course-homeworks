@@ -1,0 +1,1 @@
+#ramdenime codewars gavaketet

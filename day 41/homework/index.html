@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>clone1</title>
+        <style>
+            body {
+                font-family:system-ui;
+                align-items: top;
+                height: 270vh;
+                background-color: rgb(38 38 38);
+                text-align: center; 
+            }
+            .class1 img {
+                border: 1px solid rgb(50 50 50);
+                padding: 5px;
+                border-radius: 100px;
+                margin-top: 80px;
+            }
+            .class1 h2 {
+                font-size: 50px;
+                margin-top: 15px;
+                color: #D9D9D9;
+                font-weight: normal;
+            }
+            .class1 h3 {
+                font-weight: normal;
+                color: #7F7F7F;
+            }
+            .class2 {
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 25px;
+                padding: 40px;
+                margin-top: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 750px;
+                margin-left: 350px;
+            }
+            .class2 .img1 {
+                border: 1px solid rgb(38, 38, 38);
+                border-radius: 100px;
+                padding: 5px;
+            }
+            .div1 {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 20px;
+            }
+            .div1 h3 {
+                color: #7F7F7F;
+                font-weight: normal;
+            }
+            .div1 h1 {
+                font-weight: normal;
+                color:#D9D9D9;
+                font-size: 30px
+            }
+            .class2 button {
+                background-color: rgb(50, 50, 50);
+                border: 0;
+                border-radius: 100px;
+                cursor: pointer;
+                width:60px;
+                height:60px;
+                transition: 0.35s;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .class2 button:hover {
+                width: 65px;
+                height: 65px;
+            }
+            .class3 {
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 25px;
+                padding: 40px;
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 750px;
+                margin-left: 350px;
+            }
+            .class3 .img2 {
+                border: 1px solid rgb(38, 38, 38);
+                border-radius: 100px;
+                padding: 5px;
+            }
+            .div2 {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 20px;
+            }
+            .div2 h3 {
+                color: #7F7F7F;
+                font-weight: normal;
+            }
+            .div2 h1 {
+                font-weight: normal;
+                color:#D9D9D9;
+                font-size: 30px
+            }
+            .class3 button {
+                background-color: rgb(50, 50, 50);
+                border: 0;
+                border-radius: 100px;
+                cursor: pointer;
+                width:60px;
+                height:60px;
+                transition: 0.35s;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .class3 button:hover {
+                width: 65px;
+                height: 65px;
+            }
+            .class4 {
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 25px;
+                padding: 40px;
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 750px;
+                margin-left: 350px;
+            }
+            .class4 .img3 {
+                border: 1px solid rgb(38, 38, 38);
+                border-radius: 100px;
+                padding: 5px;
+            }
+            .div3 {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 20px;
+            }
+            .div3 h3 {
+                color: #7F7F7F;
+                font-weight: normal;
+            }
+            .div3 h1 {
+                font-weight: normal;
+                color:#D9D9D9;
+                font-size: 30px
+            }
+            .class4 button {
+                background-color: rgb(50, 50, 50);
+                border: 0;
+                border-radius: 100px;
+                cursor: pointer;
+                width:60px;
+                height:60px;
+                transition: 0.35s;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .class4 button:hover {
+                width: 65px;
+                height: 65px;
+            }
+            .class5 {
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 25px;
+                padding: 40px;
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 750px;
+                margin-left: 350px;
+            }
+            .class5 .img4 {
+                border: 1px solid rgb(38, 38, 38);
+                border-radius: 100px;
+                padding: 5px;
+            }
+            .div4 {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 20px;
+            }
+            .div4 h3 {
+                color: #7F7F7F;
+                font-weight: normal;
+            }
+            .div4 h1 {
+                font-weight: normal;
+                color:#D9D9D9;
+                font-size: 30px
+            }
+            .class5 button {
+                background-color: rgb(50, 50, 50);
+                border: 0;
+                border-radius: 100px;
+                cursor: pointer;
+                width:60px;
+                height:60px;
+                transition: 0.35s;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .class5 button:hover {
+                width: 65px;
+                height: 65px;
+            }
+            .class6 {
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 25px;
+                padding: 40px;
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 750px;
+                margin-left: 350px;
+            }
+            .class6 .img5 {
+                border: 1px solid rgb(38, 38, 38);
+                border-radius: 100px;
+                padding: 5px;
+            }
+            .div5 {
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 20px;
+            }
+            .div5 h3 {
+                color: #7F7F7F;
+                font-weight: normal;
+            }
+            .div5 h1 {
+                font-weight: normal;
+                color:#D9D9D9;
+                font-size: 30px
+            }
+            .class6 button {
+                background-color: rgb(50, 50, 50);
+                border: 0;
+                border-radius: 100px;
+                cursor: pointer;
+                width:60px;
+                height:60px;
+                transition: 0.35s;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .class6 button:hover {
+                width: 65px;
+                height: 65px;
+            }
+            .class7 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 70px;
+            }
+            .class7 a {
+                width: 40px;
+                height: 35px;
+                cursor: pointer;
+                transition: 0.35s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin:0px 15px 0px 15px;
+            }
+            .class7 img {
+                width: 26px;
+                transition: 0.35s;
+            }
+            .class7 img:hover {
+                width: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="class1"> 
+            <img src="image.png" width="100px">
+            <h2>Henry Case</h1>
+            <h3>Sed odio tempor orc dapibus ultrices, 
+                turpis bibendum,<br> neque ipsum dolor magna sed lorem gravida.</h3>
+        </section>
+         <section class="class2">
+            <img src="image1.png" class="img1" width="150px">
+             <div class="div1">
+                <h1>Gravida</h1>
+                <h3>Quam pellentesque et necnam dissimulo <br> donec tempor sed dapibus ultrices.</h3>
+             </div>
+             <button>
+                <img src="arrow.png">
+             </button>
+        </section>
+        <section class="class3">
+            <img src="image2.png" class="img2" width="150px">
+            <div class="div2">
+                <h1>Consequat</h1>
+                <h3>Turpis bibendum neque egestas congue <br> quisque. Jaculum gravida rutrum.</h3>
+            </div>
+            <button>
+                <img src="arrow.png">
+            </button>
+        </section>
+        <section class="class4">
+            <img src="image3.png" class="img3" width="150px">
+            <div class="div3">
+                <h1>Elementum</h1>
+                <h3>Elementum integer enim, neque volutpat <br> nisl condimentum id condimentum.</h3>
+            </div>
+            <button>
+                <img src="arrow.png">
+            </button>
+        </section>
+        <section class="class5">
+            <img src="image4.png" class="img4" width="150px">
+            <div class="div4">
+                <h1>Integer</h1>
+                <h3>Vel quam elementum pulvinar etiam quam <br> lacus donec ultrices tincidunt.</h3>
+            </div>
+            <button>
+                <img src="arrow.png">
+            </button>
+        </section>
+        <section class="class6">
+            <img src="image5.png" class="img5" width="150px">
+            <div class="div5">
+                <h1>Ultrices</h1>
+                <h3>Lorem ipsum pulvinar etiam quam lacus <br> donec ultrices tincidunt consequat.</h3>
+            </div>
+            <button>
+                <img src="arrow.png">
+            </button>
+        </section>
+        <section class="class7">
+            <a href="https://x.com/?lang=en"><img src="twitter.png"></a>
+            <a href="youtube.com"><img src="youtube.png"></a>
+            <a href="snapchat.com"><img src="snapchat.png"></a>
+            <a href="mail.google.com"><img src="email.png"></a>
+        </section>
+    </body>
+</html>
