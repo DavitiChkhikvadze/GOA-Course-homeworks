@@ -1,0 +1,200 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    padding:0;
+    margin:0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src:
+      local("Poppins"),
+      url("assets/fonts/Poppins-Regular.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+  @font-face {
+    font-family: "PoppinsItalic";
+    src:
+      local("PoppinsItalic"),
+      url("assets/fonts/Poppins-Italic.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+  @font-face {
+    font-family: "PoppinsBold";
+    src:
+      local("PoppinsBold"),
+      url("assets/fonts/Poppins-Bold.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+  @font-face {
+    font-family: "PoppinsBoldItalic";
+    src:
+      local("PoppinsBoldItalic"),
+      url("assets/fonts/Poppins-BoldItalic.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+  @font-face {
+    font-family: "PoppinsItalic";
+    src:
+      local("PoppinsItalic"),
+      url("assets/fonts/Poppins-Italic.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+  @font-face {
+    font-family: "PoppinsExtraBoldItalic";
+    src:
+      local("PoppinsExtraBoldItalic"),
+      url("assets/fonts/Poppins-ExtraBoldItalic.ttf") format("opentype") tech(color-COLRv1)
+  }
+
+.main-container{
+    border: 0;
+    border-radius: 15px 15px 100px 15px;
+    width: 640px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+    padding: 40px;
+}
+
+.form-inputs-container {
+  display: flex;
+  align-items: flex-start;
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+.form-inputs-container li {
+  display: block;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.form-inputs-container li:last-child {
+  margin: 0;
+}
+
+.form-inputs-container li label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "PoppinsBold";
+  font-size: 11px;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+}
+.form-inputs-container li input {
+  display: block;
+  width: 100%;
+  height: 56px;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  font-family: "PoppinsBold";
+  font-size: x-large;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.divider-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom:0;
+  position: relative;
+  height: 70px;
+}
+
+.center-divider {
+  display: block;
+  height:1px;
+  font-size: 0;
+  background-color: hsl(0, 0%, 86%);
+  flex-grow: 1;
+}
+
+.divider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.divider-button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.divider-button svg {
+  transform: scale(0.76);
+}
+
+.ymd-container {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ymd-container li {
+  display: block;
+}
+
+.ymd {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "PoppinsExtraBoldItalic";
+  line-height: 80px;
+  font-size: 80px;
+}
+
+.value {
+  color: hsl(259, 100%, 65%);
+}
+
+.error-text {
+  color: hsl(0, 100%, 67%);
+  font-family: "PoppinsItalic";
+  font-size: x-small;
+  margin-top: 8px;
+  display: none;
+}
+
+@media (max-width: 395px) {
+  .main-container {
+    width: 360px;
+    height: 60%;
+  }
+
+  .ymd {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .form-inputs-container li input {
+    font-size: large;
+  }
+
+  .divider-button {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    Left: calc(50% - 20px);
+    Top: 0;
+    margin-top: 15px;
+  }
+}

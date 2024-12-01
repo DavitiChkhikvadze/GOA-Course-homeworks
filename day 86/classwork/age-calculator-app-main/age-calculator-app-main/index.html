@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main-container">
+    <form>
+      
+      <ul class="form-inputs-container">
+        <li>
+          <label for="day" id="day-label">DAY</label>
+          <input type="number" name="day" id="day" placeholder="DD" required>
+          <div class="error-text" id="day-error">
+            This field is required
+          </div>
+        </li>
+  
+        <li>
+          <label for="month" id="month-label">MONTH</label>
+          <input type="number" name="month" id="month" placeholder="MM" required>
+          <div class="error-text" id="month-error">
+            This field is required
+          </div>
+        </li>
+  
+        <li>
+          <label for="year" id="year-label">YEAR</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" required>
+          <div class="error-text" id="year-error">
+            This field is required
+          </div>
+        </li>
+      </ul>
+
+      <div class="divider-line">
+        <span class="center-divider"></span>
+        <a class="divider-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <ul class="ymd-container">
+        <li>
+          <h1 class="ymd">
+            <span class="value" id="year-num">- -</span>
+            <span class="text">years</span>
+          </h1>
+        </li>
+        <li>
+          <h1 class="ymd">
+            <span class="value" id="month-num">- -</span>
+            <span class="text">months</span>
+          </h1>
+        </li>
+        <li>
+          <h1 class="ymd">
+            <span class="value" id="day-num">- -</span>
+            <span class="text">days</span>
+          </h1>
+        </li>
+      </ul>
+      
+    </form>
+
+    
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
