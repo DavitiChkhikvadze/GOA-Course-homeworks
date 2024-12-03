@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 100vh;
     background-color: hsl(0, 0%, 94%);
     padding:0;
@@ -61,6 +61,8 @@ body {
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
     padding: 40px;
+    position: relative;
+    margin-top: 8%;
 }
 
 .form-inputs-container {
@@ -147,6 +149,9 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .ymd-container li {

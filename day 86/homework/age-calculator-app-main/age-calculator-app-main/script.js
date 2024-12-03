@@ -1,4 +1,7 @@
+const newContainer = document.querySelector(".ymd-container")
+
 document.querySelector('svg').addEventListener('click', () => {
+    newContainer.style.height = "250px"
     const dayInput = document.getElementById('day');
     const monthInput = document.getElementById('month');
     const yearInput = document.getElementById('year');
@@ -89,4 +92,7 @@ document.querySelector('svg').addEventListener('click', () => {
     error.style.fontFamily = 'Poppins'
     input.insertAdjacentElement('afterend', error);
   }
+
+
+
   
