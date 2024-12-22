@@ -1,1 +1,1 @@
-#ramdenime codewars gavaketet
+#ramdenime codewars gavaketet. codewars-shive screenshotebi chavugdet maswavlebels

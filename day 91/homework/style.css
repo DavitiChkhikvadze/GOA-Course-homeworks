@@ -7,7 +7,7 @@ body {
     padding: 20px;
   }
   .book-card {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
