@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.shape {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+}
+.square {
+    clip-path: inset(0);
+}
+.circle {
+    clip-path: circle(50%);
+}
+.rectangle {
+    clip-path: inset(10% 20%);
+}
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.pentagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.oval {
+    clip-path: ellipse(50% 40% at 50% 50%);
+}
+.star {
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%,
+        68% 57%, 79% 91%, 50% 70%,
+        21% 91%, 32% 57%, 2% 35%,
+        39% 35%
+    );
+}
+.moon {
+    clip-path: polygon(
+        /* ვერ მივხვდი ამას */
+    );
+}
+.heart {
+    clip-path: path(
+        /* ვერც ამას */
+    );
+}
