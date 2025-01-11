@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="nameInputContainer">
+        <h2>Welcome!</h2>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your name">
+        <button class="btn" onclick="saveName()">Submit</button>
+    </div>
+
+    <div class="container hidden" id="mainContainer">
+        <h2 id="welcomeMessage"></h2>
+        <p>Your Score: <span id="score">0</span></p>
+        <label for="colorPicker">Pick a background color:</label>
+        <input type="color" id="colorPicker">
+        <button class="btn" onclick="changeBackgroundColor()">Apply Color</button>
+        <br><br>
+        <label for="guessInput">Guess the number (between <span id="range"></span>):</label>
+        <input type="number" id="guessInput">
+        <button class="btn" onclick="checkGuess()">Submit Guess</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
