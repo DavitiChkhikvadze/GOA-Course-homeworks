@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .quote-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .quote-card h2 {
+    font-size: 0.85rem;
+    color: #22c55e;
+    margin-bottom: 10px;
+  }
+
+  .quote-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .dice-button {
+    background-color: #22c55e;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+  }
+
+  .dice-button:hover {
+    transform: scale(1.1);
+  }
+
+  .dice-button:active {
+    transform: scale(1);
+  }
+
+  .dice-icon {
+    font-size: 1.5rem;
+    color: white;
+  }

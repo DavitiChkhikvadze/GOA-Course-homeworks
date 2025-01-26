@@ -1,6 +1,3 @@
-#no classwork.
-#homework:
-#N1
 
 def manual_index(numbers_list, search_value):
     for i in range(len(numbers_list)):

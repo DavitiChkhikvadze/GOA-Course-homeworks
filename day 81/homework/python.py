@@ -21,7 +21,7 @@ print(count_odds(12544))
 
 n = int(input("enter count of nums: "))
 
-# რიცხვების სიის შეყვანა
+
 numbers = []
 for _ in range(n):
     number = int(input("enter full number: "))
