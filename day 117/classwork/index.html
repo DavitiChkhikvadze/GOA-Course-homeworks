@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showJoke()">joke:</button>
+    <p id="setup"></p>
+    <p id="punchline"></p>
+
+    <script>
+    function showJoke() {
+        document.getElementById("punchline").textContent = "";
+            
+        fetch("https://v2.jokeapi.dev/joke/Any?type=twopart&safe-mode")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("setup").textContent = data.setup;
+                setTimeout(() => {
+                    document.getElementById("punchline").textContent = data.delivery;
+                }, 1000);
+        })
+    }
+    </script>
+</body>
+</html>
