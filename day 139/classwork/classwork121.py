@@ -1,1 +1,0 @@
-#Codewarsebi vweret. fotoebi chavagde dawerilebis

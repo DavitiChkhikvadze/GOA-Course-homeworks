@@ -1,1 +1,0 @@
-#ver movaswari gaketeba. tavisufal dros gavaketeb
